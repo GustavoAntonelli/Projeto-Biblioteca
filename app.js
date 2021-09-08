@@ -3,7 +3,7 @@ var mongoose = require("mongoose");
 const app = express();
 const PORT = 7000;
 
-mongoose.connect("mongodb+srv://gustavo_antonelli:gustavo_antonelli@cluster0.dyuuc.mongodb.net/biblioteca?retryWrites=true&w=majority", {useNewUrlParser: true, useUnifiedTopology:true});
+mongoose.connect("mongodb+srv://gustavo_antonelli:<password>@cluster0.dyuuc.mongodb.net/database?retryWrites=true&w=majority", {useNewUrlParser: true, useUnifiedTopology:true});
 
 const Livros = mongoose.model("Livros", {
     nome: String,
